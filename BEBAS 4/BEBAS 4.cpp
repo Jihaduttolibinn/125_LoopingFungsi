@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int nTelor, nmie, nAqua, jumlah;
+int nTelor, nmie, nAqua;
 int hTelor = 2000, hMie = 2800, hAqua = 3000;
 string nama;
 
@@ -31,11 +31,25 @@ void display() {
 
 }
 
-int main() {
-	input();
+int main()
+{
+
+	char pilihan;
+	do
+	{
+		input();
 		display();
-		return(0);
+		 
+		cout << "Apakah anda ingin mengulang (y/n) ? ";
+		cin >> pilihan;
+
+
+
+		system("cls");
+
+
+	} while (pilihan == 'y' || pilihan == 'Y');
+
+
+
 }
-
-
-
